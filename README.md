@@ -32,5 +32,5 @@ Steps: After intial setup is done of the servers.
 
      ![image](https://github.com/user-attachments/assets/474060c7-2de4-46d4-ba1a-71ee11aa95ce)
 
-Last Objective: Connect to a SOAR which is Shuffle and sending an alert to a case management system like theHive and an Email to a SOC Analyst.
+
 
