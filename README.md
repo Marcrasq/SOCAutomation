@@ -11,7 +11,7 @@ Steps: After intial setup is done of the servers.
   1. Go to the ossec-agent directory and look for the OSSEC File. Here we will make a custom Log Analysis section with Sysmon in it. We want TheHive to capture Sysmon. For simplicity I have removed Application and Security Locations. Restart Wazuh Service
   ![image](https://github.com/user-attachments/assets/19b55af8-d2e7-4fdd-88e1-9ce741e0c77a)
   2. Go Back to Wazuh and here we can see it has captured events from the Windows Machine
-  ![image](https://github.com/user-attachments/assets/7cfcdb8b-8a53-4407-a826-8445dbef461b)
+  ![image](https://github.com/user-attachments/assets/d6f63935-34fc-4bad-83c2-644294995856)
   3. After disabling Windows Defender and downloading Mimikatz, cd into the directory and run the mimikatz.exe file.
   ![image](https://github.com/user-attachments/assets/c723a673-17d7-4fd8-9085-321b74c342d3)
 
