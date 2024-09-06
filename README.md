@@ -12,8 +12,10 @@ Steps: After intial setup is done of the servers.
   Security Locations. Restart Wazuh Service.
 
   ![image](https://github.com/user-attachments/assets/19b55af8-d2e7-4fdd-88e1-9ce741e0c77a)
+  
   3. Go Back to Wazuh and here we can see it has captured events from the Windows Machine.
   ![image](https://github.com/user-attachments/assets/d6f63935-34fc-4bad-83c2-644294995856)
+ 
   4. After disabling Windows Defender and downloading Mimikatz, cd into the directory and run the mimikatz.exe file.
   ![image](https://github.com/user-attachments/assets/c723a673-17d7-4fd8-9085-321b74c342d3)
 
