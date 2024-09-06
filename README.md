@@ -5,7 +5,7 @@ This will consist of:
   - Wazuh Server on a Digital Ocean Droplet
   - TheHive Server on a Digital Ocean Droplet
 
-Objective: Detect the use of mimikatz
+Objective: Detect the use of mimikatz using Wazuh
 
 Steps: After intial setup is done of the servers. 
   1. Go to the ossec-agent directory and look for the OSSEC File. Here we will make a custom Log Analysis section with Sysmon in it. We want TheHive to capture Sysmon. For simplicity I have removed Application and Security Locations. Restart Wazuh Service
@@ -31,4 +31,5 @@ Steps: After intial setup is done of the servers.
 
      ![image](https://github.com/user-attachments/assets/474060c7-2de4-46d4-ba1a-71ee11aa95ce)
 
-  8. Lastly, 
+Last Objective: Connect to a SOAR which is Shuffle and sending an alert to theHive and an Email to a SOC Analyst.
+
