@@ -22,8 +22,9 @@ Steps: After intial setup is done of the servers.
      ![image](https://github.com/user-attachments/assets/55270ce2-7c9b-45ee-89e6-f1ef17d083cc)
 
   6. Now lets make a rule since its only logging the originalFileName, if the attacker were to change the name of mimikatz.exe, Wazuh will not catch it...
-     ![image](https://github.com/user-attachments/assets/654e0e23-1190-4e32-9ccb-fe1ff1b37a9f)
      I had to make a custom rule which looks for mimikatz.exe and with an mitre ID of T1003 which is credential dumping.
+     ![image](https://github.com/user-attachments/assets/654e0e23-1190-4e32-9ccb-fe1ff1b37a9f)
+     
 
   7. I decided to change the name of mimikatz to see if the custom rule solved the bypass, and it did. Wazuh was able to detect mimikatz
      ![image](https://github.com/user-attachments/assets/c5598e32-76a7-43c4-87d6-de644af655e1)
