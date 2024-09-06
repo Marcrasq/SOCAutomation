@@ -31,4 +31,4 @@ Steps: After intial setup is done of the servers.
 
      ![image](https://github.com/user-attachments/assets/474060c7-2de4-46d4-ba1a-71ee11aa95ce)
 
-
+  8. Lastly, 
