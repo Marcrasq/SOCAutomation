@@ -1,3 +1,4 @@
+Sorry, github is not very friendly with their image pasting, but here I show the work I did to automate a SOC environment thanks.
 
 This will consist of:
   - Windows 10 with Sysmon on a VM (VirtualBox)
