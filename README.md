@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/7229770a-2279-4a6f-9ab9-ab1caae29dbc)
+![image](https://github.com/user-attachments/assets/c7613c70-5d90-41c8-8f61-6b9a3530266a)![image](https://github.com/user-attachments/assets/7229770a-2279-4a6f-9ab9-ab1caae29dbc)
 
 This will consist of:
   - Windows 10 with Sysmon on a VM (VirtualBox)
@@ -37,3 +37,32 @@ Steps: After intial setup is done of the servers.
 
 Last Objective: Connect to a SOAR which is Shuffle and sending an alert to a case management system like theHive and an Email to a SOC Analyst.
 
+Workflow: 
+  1. Mimikatz sends an alert to Shuffle using a Webhook
+  2. After receiving the Mimikatz alert the SHA256 Hash will be extracted from the file.
+  3. Then using Virustotal the reputation score will be checked.
+  4. Then the information will be sent over to theHive to create an Alert
+  5. Lastly, an Email will be send to a SOC analyst to begin investigation.
+
+Steps:
+1. After setting the hook into the wazauh cli file. I had to configure Shuffle to get the SHA256 from the Mimikatz file alert
+![image](https://github.com/user-attachments/assets/b5492481-5783-4dd2-a7c0-5ce2b7092a87)
+
+2. Next is to connect the VirusTotal API to Shuffle. Here we had to configure it to send the Hash to Virustotal then return data back. Here it shows how many scanners found Mimikatz malicious.
+![image](https://github.com/user-attachments/assets/db747392-6cec-41c4-acbc-b15dde2e6d83)
+
+3. Next I need to send this details to theHive which then an alert will be created for case management. Setup Shuffle to send alert to theHive with the date, computer and user. Here I setup the alert going to be sent.
+![image](https://github.com/user-attachments/assets/64ca6580-c077-4874-aed6-298ed19f94ac)
+
+4. Boom was able to get it through to theHive after running into some trouble with the formatting in Shuffle.
+![image](https://github.com/user-attachments/assets/22cba805-8764-4fb1-aa2d-fbc1e6bd3a0a)
+![image](https://github.com/user-attachments/assets/74b40d57-2420-4b14-a4b5-b1f9f28f684a)
+
+5. Now we got the alerts to send, we need to get the emails to send next. The first image is our workflow so far, we are making progress and the next image will show the email arriving at my inbox, not one you want to expect.
+   ![image](https://github.com/user-attachments/assets/b75ea7d3-44c5-41d7-915c-f8afdbaabc52)
+   ![image](https://github.com/user-attachments/assets/422c078a-3fba-412d-95de-1fba34c851d6)
+   ![image](https://github.com/user-attachments/assets/7ef65725-19f4-42b9-9ec0-1bc154e86d6d)
+
+7. Thats it. Next couple of lines ill be working on automating a block feature for outside connections trying to SSH in, I got this idea when I was testing the lab and since I did not set a firewall I got scanners hitting my box, so thats my next step.
+   
+   
