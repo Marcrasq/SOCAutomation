@@ -63,6 +63,5 @@ Steps:
    ![image](https://github.com/user-attachments/assets/422c078a-3fba-412d-95de-1fba34c851d6)
    ![image](https://github.com/user-attachments/assets/7ef65725-19f4-42b9-9ec0-1bc154e86d6d)
 
-7. Thats it. Next couple of lines ill be working on automating a block feature for outside connections trying to SSH in, I got this idea when I was testing the lab and since I did not set a firewall I got scanners hitting my box, so thats my next step.
-   
+
    
