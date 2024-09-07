@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/c7613c70-5d90-41c8-8f61-6b9a3530266a)![image](https://github.com/user-attachments/assets/7229770a-2279-4a6f-9ab9-ab1caae29dbc)
 
 This will consist of:
   - Windows 10 with Sysmon on a VM (VirtualBox)
